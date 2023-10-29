@@ -10,6 +10,9 @@ const Navbar = () => {
                 <Link className='mr-1 py-1 px-2 bg-yellow-400 rounded text-red-600 hover:bg-yellow-600' to='/teams'>
                     <h1>Teams</h1>
                 </Link>
+                <Link className='mr-1 py-1 px-2 bg-yellow-400 rounded text-red-600 hover:bg-yellow-600' to='/players'>
+                    <h1>Players</h1>
+                </Link>
             </div>
         </header>
     )

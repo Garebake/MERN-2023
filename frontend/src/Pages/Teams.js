@@ -81,7 +81,7 @@ const Teams = () => {
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold m-1 py-1 px-2 rounded" onClick={getTeams}>Get Team Data</button>
             <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold m-1 py-1 px-2 rounded" onClick={addToDB}>Add to DB</button>
 
-            <p>{tankTeamsDone ? 'Teams data retieved.' : 'Pending teams data.'}</p>
+            <p>{!tankTeamsLoaded && tankTeamsDone ? 'Teams data retieved.' : null}</p>
             <p>{tankTeamsLoaded ? 'Teams data loaded into Mongo.' : null}</p>
             <ul>
                 {myTeams && myTeams.map((team) => (
